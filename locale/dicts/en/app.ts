@@ -1,4 +1,4 @@
 export const app = {
-	title: "GetSpread",
-	subtitle: "TON tarot card reading",
+	title: "Cryptarot",
+	subtitle: "Get a Tarot spread on TON",
 };
