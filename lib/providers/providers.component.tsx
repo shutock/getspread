@@ -12,7 +12,7 @@ export const Providers: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
 		<TonConnectUIProvider
 			{...{
-				manifestUrl: new URL("/manifest.json", import.meta.url).toString(),
+				manifestUrl: new URL("/manifest.json", window.location.href).toString(),
 			}}
 		>
 			<SDKProvider>
