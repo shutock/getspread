@@ -11,7 +11,9 @@ const client = new QueryClient();
 export const Providers: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
 		<TonConnectUIProvider
-			{...{ manifestUrl: "https://tinybattle.app/tonconnect-manifest.json" }}
+			{...{
+				manifestUrl: new URL("/manifest.json", import.meta.url).toString(),
+			}}
 		>
 			<SDKProvider>
 				<QueryClientProvider client={client}>
