@@ -12,7 +12,7 @@ export const Providers: React.FC<React.PropsWithChildren> = ({ children }) => {
 	return (
 		<TonConnectUIProvider
 			{...{
-				manifestUrl: new URL("/manifest.json", window.location.href).toString(),
+				manifestUrl: "https://getspread.vercel.com/tonconnect-manifest.json",
 			}}
 		>
 			<SDKProvider>
