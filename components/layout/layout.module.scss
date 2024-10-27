@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  inset: 0;
+
+  .main {
+    block-size: 100%;
+  }
+}

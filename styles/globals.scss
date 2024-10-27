@@ -1,0 +1,49 @@
+@use "./fonts";
+@use "./colors";
+@use "./themes";
+
+@import "./reset.scss";
+
+html {
+  overflow: hidden;
+
+  &[data-theme="dark"] {
+    @include themes.dark;
+  }
+
+  &[data-theme="light"] {
+    @include themes.light
+  }
+
+  &[data-theme="system"] {
+    @media (prefers-color-scheme: dark) {
+      @include themes.dark;
+    }
+
+    @media (prefers-color-scheme: light) {
+      @include themes.light;
+    }
+  }
+
+  body {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    inset: 0;
+    background: colors.$paper-accent;
+    inline-size: 100%;
+    block-size: 100%;
+    color: colors.$ink-primary;
+    font-family: fonts.$family-text;
+    user-select: none;
+  }
+
+  [data-tc-modal="true"] {
+    background: linear-gradient(colors.$paper-primary, transparent);
+    pointer-events: all;
+  }
+}
+
+.go3872688706 {
+  background: colors.$ink-overlay-2-solid;
+}

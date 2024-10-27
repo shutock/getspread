@@ -1,0 +1,66 @@
+@use "@/styles/colors";
+
+.root {
+  position: relative;
+  flex: 2;
+  cursor: pointer;
+  border-radius: .75rem;
+  background: colors.$ink-accent;
+  padding: 1rem 1.5rem;
+  inline-size: stretch;
+  color: colors.$paper-accent;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+
+  * {
+    display: block;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.disabled {
+  animation: wiggle 400ms ease-in-out;
+
+  @keyframes wiggle {
+    0% {
+      translate: .5rem;
+      rotate: 1deg;
+    }
+
+    25% {
+      translate: -.25rem;
+      rotate: -.5deg;
+    }
+
+    50% {
+      translate: .125rem;
+      rotate: .25deg;
+    }
+
+    75% {
+      translate: -.0625rem;
+      rotate: -.125deg;
+    }
+
+    100% {
+      translate: 0;
+      rotate: 0;
+    }
+  }
+}
+
+.primary {
+  background: colors.$ink-accent;
+  color: colors.$paper-accent;
+}
+
+.secondary {
+  backdrop-filter: blur(1rem);
+  background: colors.$ink-overlay-1;
+  color: colors.$ink-accent;
+}

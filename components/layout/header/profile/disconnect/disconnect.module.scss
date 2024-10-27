@@ -1,0 +1,6 @@
+@use "@/styles/colors";
+
+.disconnect {
+  background: colors.$danger-accent !important;
+  color: white !important;
+}

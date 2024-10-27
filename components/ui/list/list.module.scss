@@ -1,0 +1,58 @@
+@use "@/styles/colors";
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 0 0 1rem;
+
+    .icon {
+      display: grid;
+      place-items: center;
+      border-radius: .75rem;
+      background: colors.$ink-overlay-1;
+      aspect-ratio: 1;
+      block-size: calc(100% - 1.5rem);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-block-end: 0.0625rem solid colors.$ink-stroke;
+      padding: 0 1rem 0 0;
+      inline-size: 100%;
+      block-size: 4rem;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .25rem;
+        block-size: 100%;
+
+        .title {
+          color: colors.$ink-accent;
+        }
+
+        .description {
+          color: colors.$ink-secondary;
+          font-weight: 300;
+          font-size: .75rem;
+
+        }
+      }
+    }
+
+    &:last-child {
+      .container {
+        border-block-end: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "@/styles/colors";
+
+.root {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  inset: 0 0 auto 0;
+  background: linear-gradient(colors.$paper-accent 10%, transparent);
+  padding: 1rem 1rem 2rem 1rem;
+}

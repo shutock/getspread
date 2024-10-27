@@ -1,0 +1,30 @@
+@use "@/styles/colors";
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  .logo {
+    border-radius: 999px;
+    inline-size: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+    .title {
+      color: colors.$ink-accent;
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+
+    .subtitle {
+      color: colors.$ink-secondary;
+      font-weight: 300;
+      font-size: .75rem;
+    }
+  }
+}

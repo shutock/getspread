@@ -1,0 +1,33 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		// "**/node_modules": true,
+
+		// ".next": true,
+
+		".gitignore": true,
+		// "package.json": true,
+
+		"next-env.d.ts": true,
+
+		// "*config*": true,
+		"*lock*": true,
+
+		"biome.json": true
+	},
+	"cSpell.words": [
+		"checkmark",
+		"Jettons",
+		"OPENAI",
+		"sonner",
+		"TONAPI",
+		"tonconnect",
+		"unoptimized",
+		"vaul"
+	]
+}

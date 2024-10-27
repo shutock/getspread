@@ -1,0 +1,26 @@
+@use "@/styles/colors";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0 0 0;
+
+  .image {
+    block-size: 10rem;
+  }
+
+  .title {
+    inline-size: 100%;
+    color: colors.$ink-accent;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+
+    .message {
+      display: block;
+      inline-size: 100%;
+    }
+  }
+}

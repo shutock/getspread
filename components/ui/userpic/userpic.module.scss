@@ -1,0 +1,23 @@
+.root {
+  $hue: var(--hue, 0);
+  position: relative;
+  border-radius: 999px;
+  background: hsl($hue, 80%, 60%);
+  aspect-ratio: 1;
+  overflow: hidden;
+  pointer-events: none;
+  color: hsl($hue, 80%, 30%);
+  font-weight: 500;
+
+  .letters {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    inset: 0;
+  }
+
+  .img {
+    position: absolute;
+    inset: 0;
+  }
+}

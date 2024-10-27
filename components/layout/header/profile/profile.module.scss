@@ -1,0 +1,76 @@
+@use "@/styles/colors";
+
+.trigger {
+  -webkit-backdrop-filter: blur(1rem);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  backdrop-filter: blur(1rem);
+  border-radius: 999px;
+  background: colors.$ink-overlay-1;
+  padding: .25rem 1rem .25rem .25rem;
+  max-inline-size: 100%;
+
+  .userpic {
+    position: relative;
+
+    .image {
+      block-size: 2rem;
+    }
+
+    .icon {
+      position: absolute;
+      inset: auto -0.125rem -0.125rem auto;
+      border-radius: 999px;
+      block-size: 1rem;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: .125rem;
+
+    .name {
+      color: colors.$ink-accent;
+      font-weight: 500;
+    }
+
+    .username {
+      color: colors.$ink-secondary;
+      font-weight: 300;
+      font-size: .75rem;
+    }
+  }
+}
+
+.content {
+  .header {
+    align-items: center;
+
+    .userpic {
+      inline-size: 10rem;
+    }
+
+    .title {}
+
+    .username {
+      border-radius: 999px;
+      background: colors.$ink-overlay-1;
+      padding: .5rem 1rem;
+      color: colors.$ink-secondary;
+    }
+  }
+
+  .body {
+    padding: 0 !important;
+
+    .list {
+      .item {
+        .icon {
+          border-radius: .5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@mixin dark {
+  --paper-h: 0deg;
+  --paper-s: 0%;
+  --paper-l: 7%;
+
+  --ink-h: 0deg;
+  --ink-s: 0%;
+  --ink-l: 100%;
+
+  --danger-h: 355deg;
+  --danger-s: 80%;
+  --danger-l: 60%;
+
+  --warning-h: 40deg;
+  --warning-s: 80%;
+  --warning-l: 55%;
+
+  --success-h: 140deg;
+  --success-s: 60%;
+  --success-l: 50%;
+
+  --info-h: 210deg;
+  --info-s: 80%;
+  --info-l: 60%;
+
+  // --theme-h: 210deg;
+  // --theme-s: 80%;
+  // --theme-l: 60%;
+
+  --overlay-1: 7%;
+  --overlay-2: 14%;
+  --overlay-3: 21%;
+
+  --overlay-1-solid: 12%;
+  --overlay-2-solid: 17%;
+  --overlay-3-solid: 22%;
+}
+
+@mixin light {
+  --paper-h: 0deg;
+  --paper-s: 0%;
+  --paper-l: 100%;
+
+  --ink-h: 0deg;
+  --ink-s: 0%;
+  --ink-l: 0%;
+
+  --danger-h: 355deg;
+  --danger-s: 80%;
+  --danger-l: 60%;
+
+  --warning-h: 40deg;
+  --warning-s: 80%;
+  --warning-l: 60%;
+
+  --success-h: 140deg;
+  --success-s: 80%;
+  --success-l: 60%;
+
+  --info-h: 210deg;
+  --info-s: 80%;
+  --info-l: 60%;
+
+  // --theme-h: 210deg;
+  // --theme-s: 80%;
+  // --theme-l: 60%;
+
+  --overlay-1: 5%;
+  --overlay-2: 10%;
+  --overlay-3: 15%;
+
+  --overlay-1-solid: 95%;
+  --overlay-2-solid: 90%;
+  --overlay-3-solid: 85%;
+}

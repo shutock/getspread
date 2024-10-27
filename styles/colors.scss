@@ -1,0 +1,104 @@
+$_paper-h: var(--paper-h);
+$_paper-s: var(--paper-s);
+$_paper-l: var(--paper-l);
+
+$_ink-h: var(--ink-h);
+$_ink-s: var(--ink-s);
+$_ink-l: var(--ink-l);
+
+$_danger-h: var(--danger-h);
+$_danger-s: var(--danger-s);
+$_danger-l: var(--danger-l);
+
+$_warning-h: var(--warning-h);
+$_warning-s: var(--warning-s);
+$_warning-l: var(--warning-l);
+
+$_success-h: var(--success-h);
+$_success-s: var(--success-s);
+$_success-l: var(--success-l);
+
+$_info-h: var(--info-h);
+$_info-s: var(--info-s);
+$_info-l: var(--info-l);
+
+$_theme-h: var(--theme-h);
+$_theme-s: var(--theme-s);
+$_theme-l: var(--theme-l);
+
+$_overlay-1: var(--overlay-1);
+$_overlay-2: var(--overlay-2);
+$_overlay-3: var(--overlay-3);
+
+$_overlay-1-solid: var(--overlay-1-solid);
+$_overlay-2-solid: var(--overlay-2-solid);
+$_overlay-3-solid: var(--overlay-3-solid);
+
+$ink-accent: hsla($_ink-h, $_ink-s, $_ink-l, 100%);
+$ink-primary: hsla($_ink-h, $_ink-s, $_ink-l, 80%);
+$ink-secondary: hsla($_ink-h, $_ink-s, $_ink-l, 60%);
+$ink-ghost: hsla($_ink-h, $_ink-s, $_ink-l, 40%);
+$ink-overlay-1: hsla($_ink-h, $_ink-s, $_ink-l, $_overlay-1);
+$ink-overlay-2: hsla($_ink-h, $_ink-s, $_ink-l, $_overlay-2);
+$ink-overlay-3: hsla($_ink-h, $_ink-s, $_ink-l, $_overlay-3);
+$ink-overlay-1-solid: hsla($_ink-h, $_ink-s, $_overlay-1-solid, 100%);
+$ink-overlay-2-solid: hsla($_ink-h, $_ink-s, $_overlay-2-solid, 100%);
+$ink-overlay-3-solid: hsla($_ink-h, $_ink-s, $_overlay-3-solid, 100%);
+$ink-stroke: hsla($_ink-h, $_ink-s, $_ink-l, 10%);
+
+$paper-accent: hsla($_paper-h, $_paper-s, $_paper-l, 100%);
+$paper-primary: hsla($_paper-h, $_paper-s, $_paper-l, 80%);
+$paper-secondary: hsla($_paper-h, $_paper-s, $_paper-l, 60%);
+$paper-ghost: hsla($_paper-h, $_paper-s, $_paper-l, 40%);
+$paper-overlay-1: hsla($_paper-h, $_paper-s, $_paper-l, $_overlay-1);
+$paper-overlay-2: hsla($_paper-h, $_paper-s, $_paper-l, $_overlay-2);
+$paper-overlay-3: hsla($_paper-h, $_paper-s, $_paper-l, $_overlay-3);
+$paper-overlay-1-solid: hsla($_paper-h, $_paper-s, $_overlay-1-solid, 100%);
+$paper-overlay-2-solid: hsla($_paper-h, $_paper-s, $_overlay-2-solid, 100%);
+$paper-overlay-3-solid: hsla($_paper-h, $_paper-s, $_overlay-3-solid, 100%);
+$paper-stroke: hsla($_paper-h, $_paper-s, $_paper-l, 10%);
+
+$danger-accent: hsla($_danger-h, $_danger-s, $_danger-l, 100%);
+$danger-primary: hsla($_danger-h, $_danger-s, $_danger-l, 80%);
+$danger-secondary: hsla($_danger-h, $_danger-s, $_danger-l, 60%);
+$danger-ghost: hsla($_danger-h, $_danger-s, $_danger-l, 40%);
+$danger-overlay-1: hsla($_danger-h, $_danger-s, $_danger-l, calc(($_overlay-1) * 2));
+$danger-overlay-2: hsla($_danger-h, $_danger-s, $_danger-l, calc(($_overlay-2) * 2));
+$danger-overlay-3: hsla($_danger-h, $_danger-s, $_danger-l, calc(($_overlay-3) * 2));
+$danger-stroke: hsla($_danger-h, $_danger-s, $_danger-l, 10%);
+
+$warning-accent: hsla($_warning-h, $_warning-s, $_warning-l, 100%);
+$warning-primary: hsla($_warning-h, $_warning-s, $_warning-l, 80%);
+$warning-secondary: hsla($_warning-h, $_warning-s, $_warning-l, 60%);
+$warning-ghost: hsla($_warning-h, $_warning-s, $_warning-l, 40%);
+$warning-overlay-1: hsla($_warning-h, $_warning-s, $_warning-l, calc(($_overlay-1) * 2));
+$warning-overlay-2: hsla($_warning-h, $_warning-s, $_warning-l, calc(($_overlay-2) * 2));
+$warning-overlay-3: hsla($_warning-h, $_warning-s, $_warning-l, calc(($_overlay-3) * 2));
+$warning-stroke: hsla($_warning-h, $_warning-s, $_warning-l, 10%);
+
+$success-accent: hsla($_success-h, $_success-s, $_success-l, 100%);
+$success-primary: hsla($_success-h, $_success-s, $_success-l, 80%);
+$success-secondary: hsla($_success-h, $_success-s, $_success-l, 60%);
+$success-ghost: hsla($_success-h, $_success-s, $_success-l, 40%);
+$success-overlay-1: hsla($_success-h, $_success-s, $_success-l, calc(($_overlay-1) * 2));
+$success-overlay-2: hsla($_success-h, $_success-s, $_success-l, calc(($_overlay-2) * 2));
+$success-overlay-3: hsla($_success-h, $_success-s, $_success-l, calc(($_overlay-3) * 2));
+$success-stroke: hsla($_success-h, $_success-s, $_success-l, 10%);
+
+$info-accent: hsla($_info-h, $_info-s, $_info-l, 100%);
+$info-primary: hsla($_info-h, $_info-s, $_info-l, 80%);
+$info-secondary: hsla($_info-h, $_info-s, $_info-l, 60%);
+$info-ghost: hsla($_info-h, $_info-s, $_info-l, 40%);
+$info-overlay-1: hsla($_info-h, $_info-s, $_info-l, calc(($_overlay-1) * 2));
+$info-overlay-2: hsla($_info-h, $_info-s, $_info-l, calc(($_overlay-2) * 2));
+$info-overlay-3: hsla($_info-h, $_info-s, $_info-l, calc(($_overlay-3) * 2));
+$info-stroke: hsla($_info-h, $_info-s, $_info-l, 10%);
+
+$theme-accent: hsla($_theme-h, $_theme-s, $_theme-l, 100%);
+$theme-primary: hsla($_theme-h, $_theme-s, $_theme-l, 80%);
+$theme-secondary: hsla($_theme-h, $_theme-s, $_theme-l, 60%);
+$theme-ghost: hsla($_theme-h, $_theme-s, $_theme-l, 40%);
+$theme-overlay-1: hsla($_theme-h, $_theme-s, $_theme-l, calc(($_overlay-1) * 2));
+$theme-overlay-2: hsla($_theme-h, $_theme-s, $_theme-l, calc(($_overlay-2) * 2));
+$theme-overlay-3: hsla($_theme-h, $_theme-s, $_theme-l, calc(($_overlay-3) * 2));
+$theme-stroke: hsla($_theme-h, $_theme-s, $_theme-l, 10%);

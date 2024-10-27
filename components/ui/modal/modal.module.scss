@@ -1,0 +1,67 @@
+@use "@/styles/colors";
+
+.content {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  inset: 2rem 0 0 0;
+  border-radius: 0.625rem 0.625rem 0 0;
+  background: colors.$paper-overlay-1-solid;
+
+  &.fitContent {
+    inset: auto 0 0 0;
+  }
+
+  .close {
+    display: grid;
+    position: absolute;
+    place-items: center;
+    inset: 0.5rem 0.5rem auto auto;
+    border-radius: 999px;
+    background: colors.$ink-overlay-1;
+    inline-size: 2rem;
+    block-size: 2rem;
+    color: colors.$ink-accent;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+
+    .title {
+      margin: -.125em 0;
+      color: colors.$ink-accent;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.25em;
+    }
+
+    .description {
+      margin: -.125em 0;
+      color: colors.$ink-secondary;
+      line-height: 1.25em;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    gap: 1rem;
+    border-block-start: 0.0625rem solid colors.$ink-stroke;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: colors.$paper-primary;
+  pointer-events: none;
+}
